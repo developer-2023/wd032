@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="new_article.php" method="post">
+        <p>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">    
+        </p>
+        <p>
+            <label for="content">Content</label>
+            <textarea name="content" id="content" cols="50" rows="4"></textarea>
+        </p>
+        <p>
+            <label for="publication-date">Publication date</label>
+            <input type="datetime-local" name="publication-date" id="publication-date">
+        </p>
+        <p>
+            <input type="radio" name="type" id="news" value="news">
+            <label for="news">NEWS</label>
+            <input type="radio" name="type" id="article" value="article">
+            <label for="article">ARTICLE</label>
+            <input type="radio" name="type" id="review" value="review">
+            <label for="review">REVIEW</label>
+        </p>
+        <p>
+            <input type="checkbox" name="tag" id="travels" value="travels">
+            <label for="travels">Travels</label>
+            <input type="checkbox" name="tag" id="lifestyle" value="lifestyle">
+            <label for="lifestyle">Lifestyle</label>
+        </p>
+        <select name="category" id="category">
+            <option value="category1">category1</option>
+            <option value="category2">category2</option>
+        </select>
+        <p>
+            <button type="reset">RESET</button>
+            <button type="submit">SUBMIT</button>
+        </p>
+    </form>
+</body>
+</html>
